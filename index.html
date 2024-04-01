@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
         rel="stylesheet">
     <title>Calculadora de gorjeta</title>
 </head>
-
 <body>
     <header>
         <img src="./images//logo.svg" alt="Logo do Splitter">
@@ -39,10 +37,9 @@
                 </div>
                 <div class="pessoas">
                     <label for="pessoas">Quantidade de Pessoas</label>
-                    <p>Não pode ser 0</p>
+                    <p id="erro">Não pode ser 0</p>
                     <div>
                         <img src="./images/icon-person.svg" alt="icone da pessoa">
-                        <p id="erro">Não pode ser zero</p>
                         <input type="number" name="pessoas" id="pessoas" placeholder="0">
                     </div>
                 </div>
@@ -62,8 +59,11 @@
                     <strong>Total</strong> <br>
                     / pessoa
                 </p>
+
                 <strong>$ 0.00</strong>
             </div>
+
+            <button>Limpar</button>
         </section>
     </main>
 </body>
